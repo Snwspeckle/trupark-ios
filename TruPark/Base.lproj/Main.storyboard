@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pS0-dr-FBK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HbP-h8-WIU">
+            <objects>
+                <navigationController id="pS0-dr-FBK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a4J-YG-wKj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="k09-Ij-4oP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAs-a7-Y1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="280"/>
+        </scene>
+        <!--TruPark-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ParkMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIz-Gz-IGL">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                            </mapView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlm-NM-RvT">
+                                <rect key="frame" x="0.0" y="435" width="600" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="F32-La-SaN">
+                                        <variation key="widthClass=regular" constant="135"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="600" width="400" height="200"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="u4h-eV-za4" kind="embed" id="xWw-nN-QR0"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nlm-NM-RvT" secondAttribute="bottom" id="AQT-p1-rYI"/>
+                            <constraint firstAttribute="centerX" secondItem="Nlm-NM-RvT" secondAttribute="centerX" id="FVS-bo-QcO"/>
+                            <constraint firstItem="IIz-Gz-IGL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="O6n-fq-DL9"/>
+                            <constraint firstItem="IIz-Gz-IGL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="atT-Ue-oeo"/>
+                            <constraint firstItem="IIz-Gz-IGL" firstAttribute="width" secondItem="Nlm-NM-RvT" secondAttribute="width" id="gxr-UJ-tGE"/>
+                            <constraint firstAttribute="width" secondItem="IIz-Gz-IGL" secondAttribute="width" id="h08-Z9-vcS"/>
+                            <constraint firstAttribute="centerX" secondItem="IIz-Gz-IGL" secondAttribute="centerX" id="pSK-g9-8fG"/>
+                            <constraint firstItem="Nlm-NM-RvT" firstAttribute="top" secondItem="IIz-Gz-IGL" secondAttribute="bottom" priority="750" id="v9R-b1-W2K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TruPark" id="M6D-mn-TwJ"/>
+                    <connections>
+                        <outlet property="mapView" destination="IIz-Gz-IGL" id="6yl-5M-dg0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="279"/>
+        </scene>
+        <!--Near Parking Lot Table View Controller-->
+        <scene sceneID="Gw1-ri-L5P">
+            <objects>
+                <tableViewController id="u4h-eV-za4" customClass="NearParkingLotTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="d9c-IG-wny">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="165"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParkingLotCellIdentifier" textLabel="BdF-gR-Fjq" detailTextLabel="l3Q-7c-Eef" style="IBUITableViewCellStyleValue1" id="0as-Tn-Sod" customClass="ParkingLotTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0as-Tn-Sod" id="zMe-Z0-y6A">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BdF-gR-Fjq">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular">
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l3Q-7c-Eef">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular">
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="u4h-eV-za4" id="RtA-pM-GYz"/>
+                            <outlet property="delegate" destination="u4h-eV-za4" id="G4a-uo-mGC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQm-EI-Z1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="279.5"/>
+        </scene>
+    </scenes>
+</document>

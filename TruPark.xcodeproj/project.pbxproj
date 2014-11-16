@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9265E0151A17E02C00254166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E0141A17E02C00254166 /* main.m */; };
+		9265E0181A17E02C00254166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E0171A17E02C00254166 /* AppDelegate.m */; };
+		9265E01B1A17E02C00254166 /* ParkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E01A1A17E02C00254166 /* ParkMapViewController.m */; };
+		9265E01E1A17E02C00254166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9265E01C1A17E02C00254166 /* Main.storyboard */; };
+		9265E0201A17E02C00254166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9265E01F1A17E02C00254166 /* Images.xcassets */; };
+		9265E0231A17E02C00254166 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9265E0211A17E02C00254166 /* LaunchScreen.xib */; };
+		9265E02F1A17E02D00254166 /* TruParkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E02E1A17E02D00254166 /* TruParkTests.m */; };
+		9265E0391A17E0A400254166 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9265E0381A17E0A400254166 /* MapKit.framework */; };
+		9265E03D1A17E38500254166 /* NearParkingLotTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E03C1A17E38500254166 /* NearParkingLotTableViewController.m */; };
+		9265E0401A17E93500254166 /* ParkingAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E03F1A17E93500254166 /* ParkingAnnotation.m */; };
+		9265E0431A17F08E00254166 /* ParkingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E0421A17F08E00254166 /* ParkingAnnotationView.m */; };
+		9265E0471A17F43500254166 /* ParkingLots.json in Resources */ = {isa = PBXBuildFile; fileRef = 9265E0461A17F43500254166 /* ParkingLots.json */; };
+		9265E04A1A18366F00254166 /* ZSPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E0491A18366F00254166 /* ZSPinAnnotation.m */; };
+		9265E04D1A18369100254166 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9265E04C1A18369100254166 /* QuartzCore.framework */; };
+		9265E04F1A18369C00254166 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9265E04E1A18369C00254166 /* CoreImage.framework */; };
+		9265E0511A1836A600254166 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9265E0501A1836A600254166 /* CoreGraphics.framework */; };
+		9265E0541A1870C900254166 /* ParkingLotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E0531A1870C900254166 /* ParkingLotTableViewCell.m */; };
+		9265E05A1A18EB6200254166 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265E0591A18EB6200254166 /* DataModel.m */; };
+		948755A8F57A125A15B2B1F5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8A634771F6E06059B8B264 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9265E0291A17E02D00254166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9265E0071A17E02C00254166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9265E00E1A17E02C00254166;
+			remoteInfo = TruPark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		384B87239B0A7FDB8D507C37 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9265E00F1A17E02C00254166 /* TruPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9265E0131A17E02C00254166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9265E0141A17E02C00254166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9265E0161A17E02C00254166 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9265E0171A17E02C00254166 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9265E0191A17E02C00254166 /* ParkMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParkMapViewController.h; sourceTree = "<group>"; };
+		9265E01A1A17E02C00254166 /* ParkMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkMapViewController.m; sourceTree = "<group>"; };
+		9265E01D1A17E02C00254166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9265E01F1A17E02C00254166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9265E0221A17E02C00254166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9265E0281A17E02D00254166 /* TruParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruParkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9265E02D1A17E02D00254166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9265E02E1A17E02D00254166 /* TruParkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TruParkTests.m; sourceTree = "<group>"; };
+		9265E0381A17E0A400254166 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9265E03B1A17E38500254166 /* NearParkingLotTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NearParkingLotTableViewController.h; path = ../NearParkingLotTableViewController.h; sourceTree = "<group>"; };
+		9265E03C1A17E38500254166 /* NearParkingLotTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NearParkingLotTableViewController.m; path = ../NearParkingLotTableViewController.m; sourceTree = "<group>"; };
+		9265E03E1A17E93500254166 /* ParkingAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingAnnotation.h; sourceTree = "<group>"; };
+		9265E03F1A17E93500254166 /* ParkingAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingAnnotation.m; sourceTree = "<group>"; };
+		9265E0411A17F08E00254166 /* ParkingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingAnnotationView.h; sourceTree = "<group>"; };
+		9265E0421A17F08E00254166 /* ParkingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingAnnotationView.m; sourceTree = "<group>"; };
+		9265E0461A17F43500254166 /* ParkingLots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ParkingLots.json; sourceTree = "<group>"; };
+		9265E0481A18366F00254166 /* ZSPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPinAnnotation.h; sourceTree = "<group>"; };
+		9265E0491A18366F00254166 /* ZSPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPinAnnotation.m; sourceTree = "<group>"; };
+		9265E04C1A18369100254166 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9265E04E1A18369C00254166 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9265E0501A1836A600254166 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9265E0521A1870C900254166 /* ParkingLotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotTableViewCell.h; sourceTree = "<group>"; };
+		9265E0531A1870C900254166 /* ParkingLotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingLotTableViewCell.m; sourceTree = "<group>"; };
+		9265E0581A18EB6200254166 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		9265E0591A18EB6200254166 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		A58B6A4A941A52AF42A87AA1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CC8A634771F6E06059B8B264 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9265E00C1A17E02C00254166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9265E0511A1836A600254166 /* CoreGraphics.framework in Frameworks */,
+				9265E04F1A18369C00254166 /* CoreImage.framework in Frameworks */,
+				9265E04D1A18369100254166 /* QuartzCore.framework in Frameworks */,
+				9265E0391A17E0A400254166 /* MapKit.framework in Frameworks */,
+				948755A8F57A125A15B2B1F5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9265E0251A17E02D00254166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A1E5C5D21F276F4993F00C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9265E0501A1836A600254166 /* CoreGraphics.framework */,
+				9265E04E1A18369C00254166 /* CoreImage.framework */,
+				9265E04C1A18369100254166 /* QuartzCore.framework */,
+				CC8A634771F6E06059B8B264 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		307730717855B75E2A8DE368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				384B87239B0A7FDB8D507C37 /* Pods.debug.xcconfig */,
+				A58B6A4A941A52AF42A87AA1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9265E0061A17E02C00254166 = {
+			isa = PBXGroup;
+			children = (
+				9265E0111A17E02C00254166 /* TruPark */,
+				9265E02B1A17E02D00254166 /* TruParkTests */,
+				9265E0101A17E02C00254166 /* Products */,
+				307730717855B75E2A8DE368 /* Pods */,
+				2A1E5C5D21F276F4993F00C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9265E0101A17E02C00254166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9265E00F1A17E02C00254166 /* TruPark.app */,
+				9265E0281A17E02D00254166 /* TruParkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9265E0111A17E02C00254166 /* TruPark */ = {
+			isa = PBXGroup;
+			children = (
+				9265E0161A17E02C00254166 /* AppDelegate.h */,
+				9265E0171A17E02C00254166 /* AppDelegate.m */,
+				9265E0581A18EB6200254166 /* DataModel.h */,
+				9265E0591A18EB6200254166 /* DataModel.m */,
+				9265E01F1A17E02C00254166 /* Images.xcassets */,
+				9265E0211A17E02C00254166 /* LaunchScreen.xib */,
+				9265E01C1A17E02C00254166 /* Main.storyboard */,
+				9265E03B1A17E38500254166 /* NearParkingLotTableViewController.h */,
+				9265E03C1A17E38500254166 /* NearParkingLotTableViewController.m */,
+				9265E03E1A17E93500254166 /* ParkingAnnotation.h */,
+				9265E03F1A17E93500254166 /* ParkingAnnotation.m */,
+				9265E0411A17F08E00254166 /* ParkingAnnotationView.h */,
+				9265E0421A17F08E00254166 /* ParkingAnnotationView.m */,
+				9265E0461A17F43500254166 /* ParkingLots.json */,
+				9265E0521A1870C900254166 /* ParkingLotTableViewCell.h */,
+				9265E0531A1870C900254166 /* ParkingLotTableViewCell.m */,
+				9265E0191A17E02C00254166 /* ParkMapViewController.h */,
+				9265E01A1A17E02C00254166 /* ParkMapViewController.m */,
+				9265E0121A17E02C00254166 /* Supporting Files */,
+				9265E04B1A18367300254166 /* ZSPinAnnotation */,
+			);
+			path = TruPark;
+			sourceTree = "<group>";
+		};
+		9265E0121A17E02C00254166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9265E0381A17E0A400254166 /* MapKit.framework */,
+				9265E0131A17E02C00254166 /* Info.plist */,
+				9265E0141A17E02C00254166 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9265E02B1A17E02D00254166 /* TruParkTests */ = {
+			isa = PBXGroup;
+			children = (
+				9265E02E1A17E02D00254166 /* TruParkTests.m */,
+				9265E02C1A17E02D00254166 /* Supporting Files */,
+			);
+			path = TruParkTests;
+			sourceTree = "<group>";
+		};
+		9265E02C1A17E02D00254166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9265E02D1A17E02D00254166 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9265E04B1A18367300254166 /* ZSPinAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				9265E0481A18366F00254166 /* ZSPinAnnotation.h */,
+				9265E0491A18366F00254166 /* ZSPinAnnotation.m */,
+			);
+			name = ZSPinAnnotation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9265E00E1A17E02C00254166 /* TruPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9265E0321A17E02D00254166 /* Build configuration list for PBXNativeTarget "TruPark" */;
+			buildPhases = (
+				8E0EA95EC39CC67D780FAF7D /* Check Pods Manifest.lock */,
+				9265E00B1A17E02C00254166 /* Sources */,
+				9265E00C1A17E02C00254166 /* Frameworks */,
+				9265E00D1A17E02C00254166 /* Resources */,
+				DCC9C038082C7CD0389596CB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruPark;
+			productName = TruPark;
+			productReference = 9265E00F1A17E02C00254166 /* TruPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9265E0271A17E02D00254166 /* TruParkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9265E0351A17E02D00254166 /* Build configuration list for PBXNativeTarget "TruParkTests" */;
+			buildPhases = (
+				9265E0241A17E02D00254166 /* Sources */,
+				9265E0251A17E02D00254166 /* Frameworks */,
+				9265E0261A17E02D00254166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9265E02A1A17E02D00254166 /* PBXTargetDependency */,
+			);
+			name = TruParkTests;
+			productName = TruParkTests;
+			productReference = 9265E0281A17E02D00254166 /* TruParkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9265E0071A17E02C00254166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Anthony Vella";
+				TargetAttributes = {
+					9265E00E1A17E02C00254166 = {
+						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					9265E0271A17E02D00254166 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9265E00E1A17E02C00254166;
+					};
+				};
+			};
+			buildConfigurationList = 9265E00A1A17E02C00254166 /* Build configuration list for PBXProject "TruPark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9265E0061A17E02C00254166;
+			productRefGroup = 9265E0101A17E02C00254166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9265E00E1A17E02C00254166 /* TruPark */,
+				9265E0271A17E02D00254166 /* TruParkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9265E00D1A17E02C00254166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9265E01E1A17E02C00254166 /* Main.storyboard in Resources */,
+				9265E0231A17E02C00254166 /* LaunchScreen.xib in Resources */,
+				9265E0471A17F43500254166 /* ParkingLots.json in Resources */,
+				9265E0201A17E02C00254166 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9265E0261A17E02D00254166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E0EA95EC39CC67D780FAF7D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC9C038082C7CD0389596CB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9265E00B1A17E02C00254166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9265E01B1A17E02C00254166 /* ParkMapViewController.m in Sources */,
+				9265E0181A17E02C00254166 /* AppDelegate.m in Sources */,
+				9265E05A1A18EB6200254166 /* DataModel.m in Sources */,
+				9265E0541A1870C900254166 /* ParkingLotTableViewCell.m in Sources */,
+				9265E0431A17F08E00254166 /* ParkingAnnotationView.m in Sources */,
+				9265E03D1A17E38500254166 /* NearParkingLotTableViewController.m in Sources */,
+				9265E0401A17E93500254166 /* ParkingAnnotation.m in Sources */,
+				9265E0151A17E02C00254166 /* main.m in Sources */,
+				9265E04A1A18366F00254166 /* ZSPinAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9265E0241A17E02D00254166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9265E02F1A17E02D00254166 /* TruParkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9265E02A1A17E02D00254166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9265E00E1A17E02C00254166 /* TruPark */;
+			targetProxy = 9265E0291A17E02D00254166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9265E01C1A17E02C00254166 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9265E01D1A17E02C00254166 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9265E0211A17E02C00254166 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9265E0221A17E02C00254166 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9265E0301A17E02D00254166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9265E0311A17E02D00254166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9265E0331A17E02D00254166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 384B87239B0A7FDB8D507C37 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TruPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9265E0341A17E02D00254166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58B6A4A941A52AF42A87AA1 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TruPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9265E0361A17E02D00254166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TruParkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruPark.app/TruPark";
+			};
+			name = Debug;
+		};
+		9265E0371A17E02D00254166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TruParkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruPark.app/TruPark";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9265E00A1A17E02C00254166 /* Build configuration list for PBXProject "TruPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9265E0301A17E02D00254166 /* Debug */,
+				9265E0311A17E02D00254166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9265E0321A17E02D00254166 /* Build configuration list for PBXNativeTarget "TruPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9265E0331A17E02D00254166 /* Debug */,
+				9265E0341A17E02D00254166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9265E0351A17E02D00254166 /* Build configuration list for PBXNativeTarget "TruParkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9265E0361A17E02D00254166 /* Debug */,
+				9265E0371A17E02D00254166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9265E0071A17E02C00254166 /* Project object */;
+}

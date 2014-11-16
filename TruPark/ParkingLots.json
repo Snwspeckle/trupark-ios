@@ -1,0 +1,26 @@
+{
+    "55ff70065075555329431787":
+    {
+        "name": "parkingSpot1",
+        "title": "435-439 Riddle Rd",
+        "state": "Taken",
+        "lat": 39.135445,
+        "lon": -84.521911
+    },
+    "54ff73066667515149361367":
+    {
+        "name": "parkingSpot2",
+        "title": "2380 Wheeler St",
+        "state": "Taken",
+        "lat": 39.127302,
+        "lon": -84.520388
+    },
+    "53ff70065075535113331387":
+    {
+        "name": "parkingSpot3",
+        "title": "2823 Glendora Ave",
+        "state": "Taken",
+        "lat": 39.132491,
+        "lon": -84.510142
+    }
+}
